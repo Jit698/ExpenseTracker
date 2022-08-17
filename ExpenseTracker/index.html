@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS04</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <hr class="hr">
+            <h1>Expense Tracker</h1>
+            <div class="balance">
+                <h5>YOUR BALANCE</h5>
+                <h2 id="balance">$ 32.00</h2>
+            </div>
+
+            <div class="income-exp-fluid">
+                <div>
+                    <h4>INCOME</h4>
+                    <p id="money-plus" class="money plus success">$44.00</p>
+                </div>
+                <hr class="hr1">
+                <div>
+                    <h4>EXPENSE</h4>
+                    <p id="money-minus" class="money minus danger">$12.00</p>
+                </div>
+            </div>
+            <div class="tra-history">
+                <h5>History</h5>
+                <ul id="list" class="list">
+                    <li class="plus">
+                        Dummy <span>+$32</span><button class="delete-btn">x</button>
+                    </li>
+                  
+                </ul>
+            </div>
+
+            <h3>Add new transaction</h3>
+            <div class="form-container">
+                <form id="form" >
+                    <div class="form-control">
+                        <label for="text">Text</label>
+                        <input type="text" id="text" placeholder="Enter item" />
+                    </div>
+                    <div class="form-control">
+                        <label for="amount">Amount <br />
+                            (Use '-' for expense, '+' for  income)</label>
+                        <input type="number" id="amount" placeholder="Enter amount" />
+                    </div>
+                    <button class="btn" onclick="local">Add transaction</button>
+                </form >
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="/JSAssignment3/JS04/index.js"></script> -->
+</body>
+
+</html>
